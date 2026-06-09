@@ -14,7 +14,7 @@ export function LeadPopup() {
 
     const reset = () => {
       if (timer.current) window.clearTimeout(timer.current);
-      timer.current = window.setTimeout(() => setOpen(true), 30000);
+      timer.current = window.setTimeout(() => setOpen(true), 60000);
     };
     const events: (keyof DocumentEventMap)[] = ["mousemove", "keydown", "scroll", "touchstart"];
     events.forEach((e) => document.addEventListener(e, reset, { passive: true }));
