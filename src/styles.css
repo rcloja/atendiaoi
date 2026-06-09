@@ -139,8 +139,6 @@
   color: var(--primary-foreground);
   box-shadow: 0 6px 20px -6px color-mix(in oklab, var(--primary) 55%, transparent), inset 0 1px 0 rgba(255,255,255,0.15);
   transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
-}
-@utility btn-primary {
   &:hover { transform: translateY(-1px); filter: brightness(1.05); }
   &:active { transform: translateY(0); }
 }
@@ -158,8 +156,6 @@
   color: var(--foreground);
   border: 1px solid var(--border);
   transition: background .2s ease, border-color .2s ease;
-}
-@utility btn-secondary {
   &:hover { background: var(--surface); border-color: color-mix(in oklab, var(--primary) 30%, var(--border)); }
 }
 
@@ -175,8 +171,6 @@
   color: white;
   box-shadow: 0 6px 18px -6px rgba(37, 211, 102, 0.55);
   transition: transform .15s ease, filter .2s ease;
-}
-@utility btn-whatsapp {
   &:hover { transform: translateY(-1px); filter: brightness(1.05); }
 }
 
@@ -186,8 +180,6 @@
   border-radius: 1rem;
   box-shadow: var(--shadow-soft);
   transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-}
-@utility card-soft {
   &:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-elevated);
