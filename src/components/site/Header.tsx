@@ -6,7 +6,7 @@ const NAV = [
   { label: "Recursos", href: "#recursos" },
   { label: "Planos", href: "#planos" },
   { label: "Parceiros", href: "#parceiros" },
-  { label: "Documentação", href: "https://www.atendenteai.com.br/documentacao.html", external: true },
+  { label: "Documentação", href: "/documentacao.html", external: true },
 ];
 
 export function Header() {
