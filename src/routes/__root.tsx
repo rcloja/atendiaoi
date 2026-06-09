@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas" },
+      { name: "description", content: "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito." },
+      { name: "author", content: "AtendenteAi" },
+      { property: "og:title", content: "AtendenteAi — Atendimento inteligente no WhatsApp" },
+      { property: "og:description", content: "Centralize atendimentos, organize o histórico e responda 24h. Teste grátis por 7 dias." },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "AtendenteAi" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
