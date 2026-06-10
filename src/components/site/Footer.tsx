@@ -1,4 +1,4 @@
-import { MessageSquare } from "lucide-react";
+import logoAsset from "@/assets/atendenteai-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -6,9 +6,7 @@ export function Footer() {
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-semibold">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-              <MessageSquare size={18} />
-            </span>
+            <img src={logoAsset.url} alt="AtendenteAi" className="h-9 w-9 object-contain" />
             <span className="text-lg">AtendenteAi</span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-md">
@@ -31,8 +29,8 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold text-foreground">Contato</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li><a href="https://wa.me/555141061160" target="_blank" rel="noreferrer" className="hover:text-foreground">WhatsApp (51) 4106-1160</a></li>
-            <li><a href="https://faq.atendenteai.com.br" target="_blank" rel="noreferrer" className="hover:text-foreground">Documentação</a></li>
+            <li><a href="https://wa.me/5551996479050" target="_blank" rel="noreferrer" className="hover:text-foreground">WhatsApp (51) 99647-9050</a></li>
+            <li><a href="/documentacao.html" target="_blank" rel="noreferrer" className="hover:text-foreground">Documentação</a></li>
             <li><a href="https://admin.atendenteai.com.br" target="_blank" rel="noreferrer" className="hover:text-foreground">Login</a></li>
           </ul>
         </div>

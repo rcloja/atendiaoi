@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
-import { MessageSquare, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logoAsset from "@/assets/atendenteai-logo.png.asset.json";
 
 const NAV = [
   { label: "Recursos", href: "#recursos" },
   { label: "Planos", href: "#planos" },
   { label: "Parceiros", href: "#parceiros" },
-  { label: "Documentação", href: "https://faq.atendenteai.com.br", external: true },
+  { label: "Documentação", href: "/documentacao.html", external: true },
 ];
 
 export function Header() {
@@ -29,9 +30,7 @@ export function Header() {
     >
       <div className="container-page flex items-center justify-between h-16">
         <a href="#top" className="flex items-center gap-2 font-semibold text-foreground">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-dark text-primary-foreground shadow-[var(--shadow-elevated)]">
-            <MessageSquare className="h-4.5 w-4.5" size={18} />
-          </span>
+          <img src={logoAsset.url} alt="AtendenteAi" className="h-9 w-9 object-contain" />
           <span className="text-lg tracking-tight">AtendenteAi</span>
         </a>
 
