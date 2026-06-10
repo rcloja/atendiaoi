@@ -1,4 +1,4 @@
-import { MessageSquare } from "lucide-react";
+import logoAsset from "@/assets/atendenteai-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -6,9 +6,7 @@ export function Footer() {
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2 font-semibold">
-            <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-dark text-primary-foreground">
-              <MessageSquare size={18} />
-            </span>
+            <img src={logoAsset.url} alt="AtendenteAi" className="h-9 w-9 object-contain" />
             <span className="text-lg">AtendenteAi</span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-md">
