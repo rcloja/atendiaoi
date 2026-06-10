@@ -5,7 +5,7 @@ export function FloatingButtons() {
     <>
       {/* Desktop: WhatsApp floating */}
       <a
-        href="https://wa.me/555141061160"
+        href="https://wa.me/5551996479050"
         target="_blank"
         rel="noreferrer"
         aria-label="Falar no WhatsApp"
@@ -17,7 +17,7 @@ export function FloatingButtons() {
       {/* Mobile: bottom bar */}
       <div className="md:hidden fixed bottom-0 inset-x-0 z-40 border-t border-border bg-background/95 backdrop-blur-md px-3 py-2.5 flex gap-2 shadow-[0_-4px_20px_rgba(15,23,42,0.06)]">
         <a
-          href="https://wa.me/555141061160"
+          href="https://wa.me/5551996479050"
           target="_blank"
           rel="noreferrer"
           className="btn-whatsapp flex-1 py-3 text-sm"
