@@ -503,7 +503,7 @@ function SectionPlans() {
                 ))}
               </ul>
               <a
-                href={p.cta === "Falar com especialista" ? "https://wa.me/555141061160" : "#teste"}
+                href={p.cta === "Falar com especialista" ? "https://wa.me/5551996479050" : "#teste"}
                 target={p.cta === "Falar com especialista" ? "_blank" : undefined}
                 rel={p.cta === "Falar com especialista" ? "noreferrer" : undefined}
                 className={`mt-7 ${p.featured ? "btn-primary" : "btn-secondary"} w-full`}
@@ -550,7 +550,7 @@ function SectionPartners() {
             ))}
           </div>
 
-          <a href="https://wa.me/555141061160?text=Quero%20ser%20parceiro%20AtendenteAi" target="_blank" rel="noreferrer" className="btn-primary mt-8">
+          <a href="https://wa.me/5551996479050?text=Quero%20ser%20parceiro%20AtendenteAi" target="_blank" rel="noreferrer" className="btn-primary mt-8">
             Quero ser parceiro
           </a>
         </div>
@@ -612,7 +612,7 @@ function SectionFinalCTA() {
               <a href="#teste" className="inline-flex items-center justify-center gap-2 rounded-xl bg-background text-foreground px-6 py-3.5 font-semibold hover:scale-[1.02] transition-transform">
                 Quero testar grátis <ArrowRight size={16} />
               </a>
-              <a href="https://wa.me/555141061160" target="_blank" rel="noreferrer" className="btn-whatsapp">
+              <a href="https://wa.me/5551996479050" target="_blank" rel="noreferrer" className="btn-whatsapp">
                 <Headphones size={18} /> Falar no WhatsApp
               </a>
             </div>
