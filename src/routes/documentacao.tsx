@@ -562,4 +562,3 @@ function SectionHeader({ chip, title, subtitle }: { chip: string; title: string;
 }
 
 // re-export type helper
-import type React from "react";
