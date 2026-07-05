@@ -5,17 +5,25 @@ const ACTION_URL = "https://admin.atendenteai.com.br/cadastroteste.html";
 
 function formatWhatsapp(value: string) {
   const digits = value.replace(/\D/g, "").slice(0, 13);
-  let ddi = digits.slice(0, 2);
-  let ddd = digits.slice(2, 4);
-  const part1 = digits.slice(4, 9);
-  const part2 = digits.slice(9, 13);
+  const ddi = digits.slice(0, 2);
+  const ddd = digits.slice(2, 4);
+  const rest = digits.slice(4);
 
   if (digits.length === 0) return "";
   if (digits.length < 2) return `+${ddi}`;
   if (digits.length < 4) return `+${ddi} (${ddd}`;
-  if (digits.length < 9) return `+${ddi} (${ddd}) ${part1}`;
-  return `+${ddi} (${ddd}) ${part1}-${part2}`;
+
+  // Fixo (8 dígitos): xxxx-xxxx  | Celular (9 dígitos): xxxxx-xxxx
+  if (rest.length <= 8) {
+    const p1 = rest.slice(0, 4);
+    const p2 = rest.slice(4, 8);
+    return p2 ? `+${ddi} (${ddd}) ${p1}-${p2}` : `+${ddi} (${ddd}) ${p1}`;
+  }
+  const p1 = rest.slice(0, 5);
+  const p2 = rest.slice(5, 9);
+  return `+${ddi} (${ddd}) ${p1}-${p2}`;
 }
+
 
 export function TrialForm() {
   const [data, setData] = useState({ name: "", whatsapp: "+55 ", email: "" });
@@ -43,8 +51,8 @@ export function TrialForm() {
           required
           placeholder="+55 (51) 99999-9999"
           inputMode="tel"
-          pattern="\+\d{2} \(\d{2}\) \d{5}-\d{4}"
-          title="Formato: +55 (51) 99999-9999"
+          pattern="\+\d{2} \(\d{2}\) \d{4,5}-\d{4}"
+          title="Formato: +55 (51) 99999-9999 ou +55 (51) 3333-3333"
         />
         <Input label="Email" name="email" type="email" value={data.email} onChange={set("email")} required />
         <button type="submit" className="btn-primary w-full mt-2">
