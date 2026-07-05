@@ -55,22 +55,44 @@ export function Calculator() {
         <div className="mt-6 rounded-xl border border-border bg-background p-4">
           <p className="text-sm font-medium text-foreground">Agora compare com nossos planos:</p>
           <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
-            <li className="flex justify-between"><span>Plano Start</span><span className="font-semibold text-foreground">R$ 297</span></li>
-            <li className="flex justify-between"><span>Plano Profissional</span><span className="font-semibold text-foreground">R$ 597</span></li>
-            <li className="flex justify-between"><span>Plano Empresarial</span><span className="font-semibold text-foreground">R$ 997</span></li>
+            <li className="flex justify-between">
+              <span>Plano Start</span>
+              <span className="font-semibold text-foreground">R$ 297</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Plano Profissional</span>
+              <span className="font-semibold text-foreground">R$ 597</span>
+            </li>
+            <li className="flex justify-between">
+              <span>Plano Empresarial</span>
+              <span className="font-semibold text-foreground">R$ 997</span>
+            </li>
           </ul>
         </div>
 
-        <a href="#teste" className="btn-primary w-full mt-6">Quero testar grátis</a>
+        <a href="#teste" className="btn-primary w-full mt-6">
+          Quero testar grátis
+        </a>
       </div>
     </div>
   );
 }
 
 function Field({
-  label, value, min, max, step, prefix, onChange,
+  label,
+  value,
+  min,
+  max,
+  step,
+  prefix,
+  onChange,
 }: {
-  label: string; value: number; min: number; max: number; step: number; prefix?: string;
+  label: string;
+  value: number;
+  min: number;
+  max: number;
+  step: number;
+  prefix?: string;
   onChange: (n: number) => void;
 }) {
   return (

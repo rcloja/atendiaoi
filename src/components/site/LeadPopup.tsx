@@ -52,7 +52,9 @@ export function LeadPopup() {
             <p className="mt-2 text-sm text-muted-foreground">
               Verifique sua caixa de entrada nos próximos minutos.
             </p>
-            <button onClick={close} className="btn-primary mt-5">Fechar</button>
+            <button onClick={close} className="btn-primary mt-5">
+              Fechar
+            </button>
           </div>
         ) : (
           <>
@@ -61,10 +63,16 @@ export function LeadPopup() {
               Ainda não está pronto para testar?
             </h3>
             <p className="mt-2 text-sm text-muted-foreground">
-              Receba gratuitamente o guia <strong className="text-foreground">"Como empresas estão usando tecnologia para responder mais rápido no WhatsApp."</strong>
+              Receba gratuitamente o guia{" "}
+              <strong className="text-foreground">
+                "Como empresas estão usando tecnologia para responder mais rápido no WhatsApp."
+              </strong>
             </p>
             <form
-              onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}
+              onSubmit={(e) => {
+                e.preventDefault();
+                setSubmitted(true);
+              }}
               className="mt-5 space-y-3"
             >
               <input
@@ -73,7 +81,9 @@ export function LeadPopup() {
                 placeholder="Seu melhor email"
                 className="w-full rounded-lg border border-border bg-background px-4 py-3 text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/20"
               />
-              <button type="submit" className="btn-primary w-full">Receber guia</button>
+              <button type="submit" className="btn-primary w-full">
+                Receber guia
+              </button>
             </form>
           </>
         )}
