@@ -27,11 +27,7 @@ export function TrialForm() {
 
   return (
     <div className="card-soft p-6 md:p-10 max-w-xl mx-auto">
-      <form
-        action={ACTION_URL}
-        method="POST"
-        className="space-y-4 fade-up"
-      >
+      <form action={ACTION_URL} method="POST" className="space-y-4 fade-up">
         <h3 className="text-xl font-bold text-foreground">Comece seu teste gratuito</h3>
         <p className="text-sm text-muted-foreground">7 dias grátis, sem cartão de crédito.</p>
         <Input label="Nome" name="name" value={data.name} onChange={set("name")} required />
@@ -46,7 +42,14 @@ export function TrialForm() {
           pattern="\+\d{2} \(\d{2}\) \d{5}-\d{4}"
           title="Formato: +55 (51) 99999-9999"
         />
-        <Input label="Email" name="email" type="email" value={data.email} onChange={set("email")} required />
+        <Input
+          label="Email"
+          name="email"
+          type="email"
+          value={data.email}
+          onChange={set("email")}
+          required
+        />
         <button type="submit" className="btn-primary w-full mt-2">
           Criar teste gratuito <ArrowRight size={16} />
         </button>
@@ -55,7 +58,10 @@ export function TrialForm() {
   );
 }
 
-function Input({ label, ...props }: React.InputHTMLAttributes<HTMLInputElement> & { label: string }) {
+function Input({
+  label,
+  ...props
+}: React.InputHTMLAttributes<HTMLInputElement> & { label: string }) {
   return (
     <div>
       <label className="text-sm font-medium text-foreground">{label}</label>

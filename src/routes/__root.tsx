@@ -78,17 +78,43 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas" },
-      { name: "description", content: "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito." },
+      {
+        name: "description",
+        content:
+          "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito.",
+      },
       { name: "author", content: "AtendenteAi" },
-      { property: "og:title", content: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas" },
-      { property: "og:description", content: "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito." },
+      {
+        property: "og:title",
+        content: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas",
+      },
+      {
+        property: "og:description",
+        content:
+          "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "AtendenteAi" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas" },
-      { name: "twitter:description", content: "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ca2ce7f1-819e-4458-b282-c448f2e8f24a" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ca2ce7f1-819e-4458-b282-c448f2e8f24a" },
+      {
+        name: "twitter:title",
+        content: "AtendenteAi — Atendimento inteligente no WhatsApp para empresas",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Centralize atendimentos no WhatsApp, mantenha histórico organizado e responda 24h. Teste grátis por 7 dias, sem cartão de crédito.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ca2ce7f1-819e-4458-b282-c448f2e8f24a",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/ca2ce7f1-819e-4458-b282-c448f2e8f24a",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

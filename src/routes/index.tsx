@@ -1,9 +1,31 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
-  Check, X, MessageSquare, Clock, Users, FileText, BarChart3, Layers, Sparkles,
-  Headphones, Repeat, Zap, ShieldCheck, ArrowRight, PhoneCall, History,
-  TrendingDown, Star, Handshake, Briefcase, Network, Mic, BookOpen, Plug,
-  Bot, UserCheck,
+  Check,
+  X,
+  MessageSquare,
+  Clock,
+  Users,
+  FileText,
+  BarChart3,
+  Layers,
+  Sparkles,
+  Headphones,
+  Repeat,
+  Zap,
+  ShieldCheck,
+  ArrowRight,
+  PhoneCall,
+  History,
+  TrendingDown,
+  Star,
+  Handshake,
+  Briefcase,
+  Network,
+  Mic,
+  BookOpen,
+  Plug,
+  Bot,
+  UserCheck,
 } from "lucide-react";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
@@ -18,10 +40,22 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "AtendenteAi — Atendimento inteligente no WhatsApp 24h para empresas" },
-      { name: "description", content: "Centralize atendimentos no WhatsApp, organize o histórico e responda 24h. Equipe humana + tecnologia, mensalidade previsível, sem cobrança por token. Teste grátis 7 dias." },
-      { name: "keywords", content: "atendimento por IA para WhatsApp, agente virtual WhatsApp, IA para empresas, atendimento automático WhatsApp, plataforma de atendimento WhatsApp, WhatsApp com inteligência artificial, atendimento híbrido IA e humano, CRM para WhatsApp, central de atendimento WhatsApp, software de atendimento empresarial" },
+      {
+        name: "description",
+        content:
+          "Centralize atendimentos no WhatsApp, organize o histórico e responda 24h. Equipe humana + tecnologia, mensalidade previsível, sem cobrança por token. Teste grátis 7 dias.",
+      },
+      {
+        name: "keywords",
+        content:
+          "atendimento por IA para WhatsApp, agente virtual WhatsApp, IA para empresas, atendimento automático WhatsApp, plataforma de atendimento WhatsApp, WhatsApp com inteligência artificial, atendimento híbrido IA e humano, CRM para WhatsApp, central de atendimento WhatsApp, software de atendimento empresarial",
+      },
       { property: "og:title", content: "AtendenteAi — Atendimento inteligente no WhatsApp" },
-      { property: "og:description", content: "Centralize atendimentos, organize o histórico e responda 24h. Teste grátis 7 dias." },
+      {
+        property: "og:description",
+        content:
+          "Centralize atendimentos, organize o histórico e responda 24h. Teste grátis 7 dias.",
+      },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
     ],
@@ -93,20 +127,29 @@ function Hero() {
             <span className="gradient-text">24 horas por dia.</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Centralize atendimentos, mantenha o histórico organizado e permita que sua
-            equipe assuma a conversa quando necessário. Tudo em uma única plataforma.
+            Centralize atendimentos, mantenha o histórico organizado e permita que sua equipe assuma
+            a conversa quando necessário. Tudo em uma única plataforma.
           </p>
           <p className="mt-3 text-sm font-medium text-foreground">
             Sem cobrança por token. Sem surpresas na mensalidade.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href="#teste" className="btn-primary">Quero testar grátis <ArrowRight size={16} /></a>
-            <a href="#parceiros" className="btn-secondary">Quero ser parceiro</a>
+            <a href="#teste" className="btn-primary">
+              Quero testar grátis <ArrowRight size={16} />
+            </a>
+            <a href="#parceiros" className="btn-secondary">
+              Quero ser parceiro
+            </a>
           </div>
 
           <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-2 text-sm text-muted-foreground max-w-md">
-            {["Teste gratuito por 7 dias", "Sem cartão de crédito", "Cancelamento simples", "Suporte brasileiro"].map((t) => (
+            {[
+              "Teste gratuito por 7 dias",
+              "Sem cartão de crédito",
+              "Cancelamento simples",
+              "Suporte brasileiro",
+            ].map((t) => (
               <li key={t} className="flex items-center gap-2">
                 <Check size={16} className="text-success shrink-0" /> {t}
               </li>
@@ -125,29 +168,61 @@ function Hero() {
               className="w-full h-auto"
             />
           </div>
-          <FloatingBadge className="absolute -left-3 top-10 hidden sm:flex" icon={<Clock size={14} />} text="Resposta em 3s" />
-          <FloatingBadge className="absolute -right-3 bottom-12 hidden sm:flex" icon={<Sparkles size={14} />} text="IA + equipe humana" />
+          <FloatingBadge
+            className="absolute -left-3 top-10 hidden sm:flex"
+            icon={<Clock size={14} />}
+            text="Resposta em 3s"
+          />
+          <FloatingBadge
+            className="absolute -right-3 bottom-12 hidden sm:flex"
+            icon={<Sparkles size={14} />}
+            text="IA + equipe humana"
+          />
         </div>
       </div>
     </section>
   );
 }
 
-function FloatingBadge({ icon, text, className = "" }: { icon: React.ReactNode; text: string; className?: string }) {
+function FloatingBadge({
+  icon,
+  text,
+  className = "",
+}: {
+  icon: React.ReactNode;
+  text: string;
+  className?: string;
+}) {
   return (
-    <div className={`${className} items-center gap-2 rounded-full bg-card border border-border px-3.5 py-2 text-xs font-semibold text-foreground shadow-[var(--shadow-soft)]`}>
-      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-soft text-primary">{icon}</span>
+    <div
+      className={`${className} items-center gap-2 rounded-full bg-card border border-border px-3.5 py-2 text-xs font-semibold text-foreground shadow-[var(--shadow-soft)]`}
+    >
+      <span className="inline-flex h-6 w-6 items-center justify-center rounded-full bg-primary-soft text-primary">
+        {icon}
+      </span>
       {text}
     </div>
   );
 }
 
 /* ---------------- SECTION HEADER ---------------- */
-function SectionHeader({ chip, title, subtitle, center = true }: { chip?: string; title: React.ReactNode; subtitle?: React.ReactNode; center?: boolean }) {
+function SectionHeader({
+  chip,
+  title,
+  subtitle,
+  center = true,
+}: {
+  chip?: string;
+  title: React.ReactNode;
+  subtitle?: React.ReactNode;
+  center?: boolean;
+}) {
   return (
     <div className={`max-w-3xl ${center ? "mx-auto text-center" : ""}`}>
       {chip && <span className="chip">{chip}</span>}
-      <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">{title}</h2>
+      <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+        {title}
+      </h2>
       {subtitle && <p className="mt-4 text-lg text-muted-foreground leading-relaxed">{subtitle}</p>}
     </div>
   );
@@ -170,9 +245,14 @@ function Section1() {
             <p className="text-foreground font-medium">
               Quantas oportunidades deixam de existir simplesmente porque ninguém respondeu?
             </p>
-            <p>O AtendenteAi mantém seu atendimento funcionando mesmo quando sua equipe não está disponível.</p>
+            <p>
+              O AtendenteAi mantém seu atendimento funcionando mesmo quando sua equipe não está
+              disponível.
+            </p>
           </div>
-          <a href="#teste" className="btn-primary mt-8">Quero testar grátis</a>
+          <a href="#teste" className="btn-primary mt-8">
+            Quero testar grátis
+          </a>
         </div>
 
         <div className="grid grid-cols-2 gap-4">
@@ -185,7 +265,9 @@ function Section1() {
             <div key={i} className="card-soft p-4">
               <div className="flex items-center justify-between text-xs text-muted-foreground">
                 <span className="font-medium">{m.time}</span>
-                <span className={m.read ? "text-destructive" : "text-warning"}>{m.read ? "Sem resposta" : "Aguardando"}</span>
+                <span className={m.read ? "text-destructive" : "text-warning"}>
+                  {m.read ? "Sem resposta" : "Aguardando"}
+                </span>
               </div>
               <p className="mt-3 text-sm text-foreground">{m.text}</p>
             </div>
@@ -198,24 +280,41 @@ function Section1() {
 
 /* ---------------- 2 ---------------- */
 function Section2() {
-  const flow = ["Cliente interessado", "Envia mensagem", "Espera resposta", "Desiste", "Compra do concorrente"];
+  const flow = [
+    "Cliente interessado",
+    "Envia mensagem",
+    "Espera resposta",
+    "Desiste",
+    "Compra do concorrente",
+  ];
   return (
     <section className="section-pad">
       <div className="container-page">
         <SectionHeader
           chip="O custo da demora"
-          title={<>Quanto custa <span className="gradient-text">perder um cliente</span> por demora no WhatsApp?</>}
+          title={
+            <>
+              Quanto custa <span className="gradient-text">perder um cliente</span> por demora no
+              WhatsApp?
+            </>
+          }
         />
         <div className="mt-10 max-w-3xl mx-auto space-y-4 text-muted-foreground text-center leading-relaxed">
           <p>A maioria das empresas não perde clientes porque possui um produto ruim.</p>
           <p className="text-foreground font-medium">Perde porque demora para responder.</p>
-          <p>Enquanto sua equipe está ocupada, potenciais clientes continuam enviando mensagens. Muitos nunca recebem resposta. Outros desistem antes do retorno. E alguns simplesmente compram do concorrente que respondeu primeiro.</p>
+          <p>
+            Enquanto sua equipe está ocupada, potenciais clientes continuam enviando mensagens.
+            Muitos nunca recebem resposta. Outros desistem antes do retorno. E alguns simplesmente
+            compram do concorrente que respondeu primeiro.
+          </p>
         </div>
 
         <ol className="mt-12 flex flex-wrap items-stretch justify-center gap-3">
           {flow.map((step, i) => (
             <li key={i} className="flex items-center gap-3">
-              <div className={`card-soft px-4 py-3 text-sm font-semibold ${i === flow.length - 1 ? "border-destructive/30 text-destructive" : "text-foreground"}`}>
+              <div
+                className={`card-soft px-4 py-3 text-sm font-semibold ${i === flow.length - 1 ? "border-destructive/30 text-destructive" : "text-foreground"}`}
+              >
                 {step}
               </div>
               {i < flow.length - 1 && <ArrowRight size={18} className="text-muted-foreground" />}
@@ -225,9 +324,12 @@ function Section2() {
 
         <div className="mt-12 max-w-2xl mx-auto text-center">
           <p className="text-xl md:text-2xl font-semibold text-foreground">
-            Seu próximo cliente pode estar aguardando uma resposta <span className="gradient-text">neste exato momento.</span>
+            Seu próximo cliente pode estar aguardando uma resposta{" "}
+            <span className="gradient-text">neste exato momento.</span>
           </p>
-          <a href="#teste" className="btn-primary mt-8">Quero testar grátis</a>
+          <a href="#teste" className="btn-primary mt-8">
+            Quero testar grátis
+          </a>
         </div>
       </div>
     </section>
@@ -241,7 +343,12 @@ function SectionCalc() {
       <div className="container-page">
         <SectionHeader
           chip="Calculadora"
-          title={<>Calcule quanto sua empresa pode estar <span className="gradient-text">perdendo</span> por demora no WhatsApp.</>}
+          title={
+            <>
+              Calcule quanto sua empresa pode estar <span className="gradient-text">perdendo</span>{" "}
+              por demora no WhatsApp.
+            </>
+          }
           subtitle="Responda algumas perguntas simples e veja uma estimativa."
         />
         <div className="mt-12">
@@ -255,19 +362,48 @@ function SectionCalc() {
 /* ---------------- 4 ---------------- */
 function Section4() {
   const cards = [
-    { icon: Clock, title: "Atendimento lento", text: "Tempo de resposta alto perde vendas para o concorrente." },
-    { icon: MessageSquare, title: "Conversas perdidas", text: "Mensagens sem retorno viram receita não convertida." },
-    { icon: Users, title: "Equipe sobrecarregada", text: "Sua equipe não consegue dar conta de toda demanda." },
-    { icon: History, title: "Falta de histórico", text: "Sem contexto, cada atendimento começa do zero." },
-    { icon: Repeat, title: "Respostas inconsistentes", text: "Cada atendente responde de um jeito diferente." },
-    { icon: TrendingDown, title: "Dependência de pessoas", text: "Se alguém falta, a operação trava." },
+    {
+      icon: Clock,
+      title: "Atendimento lento",
+      text: "Tempo de resposta alto perde vendas para o concorrente.",
+    },
+    {
+      icon: MessageSquare,
+      title: "Conversas perdidas",
+      text: "Mensagens sem retorno viram receita não convertida.",
+    },
+    {
+      icon: Users,
+      title: "Equipe sobrecarregada",
+      text: "Sua equipe não consegue dar conta de toda demanda.",
+    },
+    {
+      icon: History,
+      title: "Falta de histórico",
+      text: "Sem contexto, cada atendimento começa do zero.",
+    },
+    {
+      icon: Repeat,
+      title: "Respostas inconsistentes",
+      text: "Cada atendente responde de um jeito diferente.",
+    },
+    {
+      icon: TrendingDown,
+      title: "Dependência de pessoas",
+      text: "Se alguém falta, a operação trava.",
+    },
   ];
   return (
     <section className="section-pad">
       <div className="container-page">
         <SectionHeader
           chip="Sinais de alerta"
-          title={<>Sua empresa está <span className="gradient-text">perdendo oportunidades</span> sem perceber.</>}
+          title={
+            <>
+              Sua empresa está <span className="gradient-text">perdendo oportunidades</span> sem
+              perceber.
+            </>
+          }
         />
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {cards.map((c) => (
@@ -300,7 +436,11 @@ function Section5() {
       <div className="container-page">
         <SectionHeader
           chip="Tudo conectado"
-          title={<>O AtendenteAi <span className="gradient-text">organiza tudo</span> em um único lugar.</>}
+          title={
+            <>
+              O AtendenteAi <span className="gradient-text">organiza tudo</span> em um único lugar.
+            </>
+          }
           subtitle="Responda mais rápido, organize informações e mantenha o histórico completo dos atendimentos."
         />
         <div className="mt-14 flex flex-wrap justify-center items-center gap-3 md:gap-4">
@@ -325,10 +465,22 @@ function Section5() {
 function Section6() {
   const cards = [
     { icon: Clock, title: "Atendimento 24h", text: "Disponível mesmo quando sua equipe não está." },
-    { icon: History, title: "Histórico completo", text: "Tudo registrado e organizado por cliente." },
+    {
+      icon: History,
+      title: "Histórico completo",
+      text: "Tudo registrado e organizado por cliente.",
+    },
     { icon: Users, title: "Equipe + tecnologia", text: "Humanos e tecnologia trabalhando juntos." },
-    { icon: Layers, title: "Informações centralizadas", text: "Uma única plataforma para toda a operação." },
-    { icon: FileText, title: "Resumos automáticos", text: "Saiba em segundos o contexto de cada conversa." },
+    {
+      icon: Layers,
+      title: "Informações centralizadas",
+      text: "Uma única plataforma para toda a operação.",
+    },
+    {
+      icon: FileText,
+      title: "Resumos automáticos",
+      text: "Saiba em segundos o contexto de cada conversa.",
+    },
     { icon: Zap, title: "Implantação simples", text: "Em minutos sua operação está funcionando." },
   ];
   return (
@@ -336,7 +488,12 @@ function Section6() {
       <div className="container-page">
         <SectionHeader
           chip="Benefícios"
-          title={<>Mais organização. Mais velocidade. <span className="gradient-text">Menos retrabalho.</span></>}
+          title={
+            <>
+              Mais organização. Mais velocidade.{" "}
+              <span className="gradient-text">Menos retrabalho.</span>
+            </>
+          }
         />
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {cards.map((c) => (
@@ -376,7 +533,12 @@ function Section7() {
       <div className="container-page">
         <SectionHeader
           chip="Recursos"
-          title={<>Tudo que sua empresa precisa para <span className="gradient-text">atender melhor.</span></>}
+          title={
+            <>
+              Tudo que sua empresa precisa para{" "}
+              <span className="gradient-text">atender melhor.</span>
+            </>
+          }
         />
         <div className="mt-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
           {features.map((f) => (
@@ -404,13 +566,21 @@ function Section8() {
             Você sabe <span className="gradient-text">exatamente</span> quanto vai pagar.
           </h2>
           <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-            <p>Muitas plataformas utilizam cobranças baseadas em consumo. O problema é que poucas empresas conseguem prever quanto irão gastar.</p>
+            <p>
+              Muitas plataformas utilizam cobranças baseadas em consumo. O problema é que poucas
+              empresas conseguem prever quanto irão gastar.
+            </p>
             <p>Com o AtendenteAi você escolhe um plano e sabe exatamente quanto irá pagar.</p>
           </div>
         </div>
         <div className="card-soft p-8 bg-gradient-to-br from-primary-soft to-background">
           <ul className="space-y-4">
-            {["Sem cobrança por token.", "Sem sustos.", "Sem surpresas.", "Sem contas imprevisíveis."].map((t) => (
+            {[
+              "Sem cobrança por token.",
+              "Sem sustos.",
+              "Sem surpresas.",
+              "Sem contas imprevisíveis.",
+            ].map((t) => (
               <li key={t} className="flex items-center gap-3 text-lg font-semibold text-foreground">
                 <ShieldCheck size={22} className="text-primary shrink-0" /> {t}
               </li>
@@ -424,18 +594,48 @@ function Section8() {
 
 /* ---------------- 9 ---------------- */
 function Section9() {
-  const before = ["Conversas perdidas", "Atendimento lento", "Dependência excessiva da equipe", "Falta de histórico", "Falta de organização"];
-  const after = ["Atendimento imediato", "Histórico centralizado", "Atendimento contínuo", "Equipe mais produtiva", "Atendimento profissional"];
+  const before = [
+    "Conversas perdidas",
+    "Atendimento lento",
+    "Dependência excessiva da equipe",
+    "Falta de histórico",
+    "Falta de organização",
+  ];
+  const after = [
+    "Atendimento imediato",
+    "Histórico centralizado",
+    "Atendimento contínuo",
+    "Equipe mais produtiva",
+    "Atendimento profissional",
+  ];
   return (
     <section className="section-pad bg-surface border-y border-border">
       <div className="container-page">
-        <SectionHeader chip="Transformação" title={<>Antes e depois do <span className="gradient-text">AtendenteAi.</span></>} />
+        <SectionHeader
+          chip="Transformação"
+          title={
+            <>
+              Antes e depois do <span className="gradient-text">AtendenteAi.</span>
+            </>
+          }
+        />
         <div className="mt-12 grid md:grid-cols-2 gap-5 max-w-4xl mx-auto">
           <div className="card-soft p-7 border-destructive/20">
-            <span className="chip" style={{ background: "color-mix(in oklab, var(--destructive) 12%, transparent)", color: "var(--destructive)", borderColor: "color-mix(in oklab, var(--destructive) 25%, transparent)" }}>Antes</span>
+            <span
+              className="chip"
+              style={{
+                background: "color-mix(in oklab, var(--destructive) 12%, transparent)",
+                color: "var(--destructive)",
+                borderColor: "color-mix(in oklab, var(--destructive) 25%, transparent)",
+              }}
+            >
+              Antes
+            </span>
             <ul className="mt-5 space-y-3">
               {before.map((t) => (
-                <li key={t} className="flex items-start gap-3 text-foreground"><X size={18} className="text-destructive mt-0.5 shrink-0" /> {t}</li>
+                <li key={t} className="flex items-start gap-3 text-foreground">
+                  <X size={18} className="text-destructive mt-0.5 shrink-0" /> {t}
+                </li>
               ))}
             </ul>
           </div>
@@ -443,7 +643,9 @@ function Section9() {
             <span className="chip">Depois</span>
             <ul className="mt-5 space-y-3">
               {after.map((t) => (
-                <li key={t} className="flex items-start gap-3 text-foreground"><Check size={18} className="text-success mt-0.5 shrink-0" /> {t}</li>
+                <li key={t} className="flex items-start gap-3 text-foreground">
+                  <Check size={18} className="text-success mt-0.5 shrink-0" /> {t}
+                </li>
               ))}
             </ul>
           </div>
@@ -457,31 +659,81 @@ function Section9() {
 function SectionPlans() {
   const plans = [
     {
-      name: "Start", price: 297, desc: "Ideal para quem está começando.",
-      features: ["1 WhatsApp", "2 atendentes humanos", "1 agente IA", "2.000 mensagens/mês", "500 áudios transcritos/mês", "Histórico 3 meses", "Respostas rápidas", "Resumo automático", "Base de conhecimento personalizada", "Transferência humano ↔ IA"],
-      cta: "Começar agora", featured: false,
+      name: "Start",
+      price: 297,
+      desc: "Ideal para quem está começando.",
+      features: [
+        "1 WhatsApp",
+        "2 atendentes humanos",
+        "1 agente IA",
+        "2.000 mensagens/mês",
+        "500 áudios transcritos/mês",
+        "Histórico 3 meses",
+        "Respostas rápidas",
+        "Resumo automático",
+        "Base de conhecimento personalizada",
+        "Transferência humano ↔ IA",
+      ],
+      cta: "Começar agora",
+      featured: false,
     },
     {
-      name: "Profissional", price: 597, desc: "Para operações em crescimento.",
-      features: ["3 WhatsApps", "5 atendentes humanos", "3 agentes IA", "6.000 mensagens/mês", "1.500 áudios transcritos/mês", "Histórico 6 meses", "Resumo automático", "Base de conhecimento", "Relatórios básicos"],
-      cta: "Começar agora", featured: true,
+      name: "Profissional",
+      price: 597,
+      desc: "Para operações em crescimento.",
+      features: [
+        "3 WhatsApps",
+        "5 atendentes humanos",
+        "3 agentes IA",
+        "6.000 mensagens/mês",
+        "1.500 áudios transcritos/mês",
+        "Histórico 6 meses",
+        "Resumo automático",
+        "Base de conhecimento",
+        "Relatórios básicos",
+      ],
+      cta: "Começar agora",
+      featured: true,
     },
     {
-      name: "Empresarial", price: 997, desc: "Operações de alta demanda.",
-      features: ["10 WhatsApps", "Atendentes ilimitados", "10 agentes IA", "Mensagens ilimitadas", "Áudios ilimitados", "Histórico 12 meses", "Relatórios avançados", "Integrações", "Prioridade no suporte"],
-      cta: "Falar com especialista", featured: false,
+      name: "Empresarial",
+      price: 997,
+      desc: "Operações de alta demanda.",
+      features: [
+        "10 WhatsApps",
+        "Atendentes ilimitados",
+        "10 agentes IA",
+        "Mensagens ilimitadas",
+        "Áudios ilimitados",
+        "Histórico 12 meses",
+        "Relatórios avançados",
+        "Integrações",
+        "Prioridade no suporte",
+      ],
+      cta: "Falar com especialista",
+      featured: false,
     },
   ];
   return (
     <section id="planos" className="section-pad">
       <div className="container-page">
-        <SectionHeader chip="Planos" title={<>Escolha o <span className="gradient-text">plano ideal.</span></>} subtitle="Mensalidade fixa. Sem cobrança por token." />
+        <SectionHeader
+          chip="Planos"
+          title={
+            <>
+              Escolha o <span className="gradient-text">plano ideal.</span>
+            </>
+          }
+          subtitle="Mensalidade fixa. Sem cobrança por token."
+        />
         <div className="mt-12 grid md:grid-cols-3 gap-5 items-stretch">
           {plans.map((p) => (
             <div
               key={p.name}
               className={`card-soft p-7 flex flex-col relative ${
-                p.featured ? "border-primary/40 shadow-[var(--shadow-elevated)] md:-translate-y-3 bg-gradient-to-b from-primary-soft to-background" : ""
+                p.featured
+                  ? "border-primary/40 shadow-[var(--shadow-elevated)] md:-translate-y-3 bg-gradient-to-b from-primary-soft to-background"
+                  : ""
               }`}
             >
               {p.featured && (
@@ -492,7 +744,9 @@ function SectionPlans() {
               <h3 className="text-xl font-bold text-foreground">{p.name}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
               <div className="mt-5 flex items-baseline gap-1">
-                <span className="text-4xl font-bold tracking-tight text-foreground">R$ {p.price}</span>
+                <span className="text-4xl font-bold tracking-tight text-foreground">
+                  R$ {p.price}
+                </span>
                 <span className="text-sm text-muted-foreground">/mês</span>
               </div>
               <ul className="mt-6 space-y-2.5 text-sm">
@@ -526,7 +780,14 @@ function SectionPartners() {
     { icon: Users, label: "Vendedores" },
     { icon: Network, label: "Afiliados" },
   ];
-  const benefits = ["Comissão recorrente", "White Label", "Painel próprio", "Material de apoio", "Escalabilidade", "Suporte brasileiro"];
+  const benefits = [
+    "Comissão recorrente",
+    "White Label",
+    "Painel próprio",
+    "Material de apoio",
+    "Escalabilidade",
+    "Suporte brasileiro",
+  ];
 
   return (
     <section id="parceiros" className="section-pad bg-surface border-y border-border">
@@ -544,13 +805,20 @@ function SectionPartners() {
           <div className="mt-3 grid grid-cols-2 gap-3">
             {ideal.map((i) => (
               <div key={i.label} className="card-soft px-4 py-3 flex items-center gap-3">
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary-soft text-primary"><i.icon size={16} /></span>
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-primary-soft text-primary">
+                  <i.icon size={16} />
+                </span>
                 <span className="text-sm font-medium text-foreground">{i.label}</span>
               </div>
             ))}
           </div>
 
-          <a href="https://wa.me/555141061160?text=Quero%20ser%20parceiro%20AtendenteAi" target="_blank" rel="noreferrer" className="btn-primary mt-8">
+          <a
+            href="https://wa.me/555141061160?text=Quero%20ser%20parceiro%20AtendenteAi"
+            target="_blank"
+            rel="noreferrer"
+            className="btn-primary mt-8"
+          >
             Quero ser parceiro
           </a>
         </div>
@@ -575,8 +843,17 @@ function SectionFAQ() {
   return (
     <section id="faq" className="section-pad">
       <div className="container-page">
-        <SectionHeader chip="FAQ" title={<>Perguntas <span className="gradient-text">frequentes</span></>} />
-        <div className="mt-12"><FAQ /></div>
+        <SectionHeader
+          chip="FAQ"
+          title={
+            <>
+              Perguntas <span className="gradient-text">frequentes</span>
+            </>
+          }
+        />
+        <div className="mt-12">
+          <FAQ />
+        </div>
       </div>
     </section>
   );
@@ -587,8 +864,18 @@ function SectionTrial() {
   return (
     <section id="teste" className="section-pad bg-surface border-y border-border">
       <div className="container-page">
-        <SectionHeader chip="Teste gratuito" title={<>Crie sua conta em <span className="gradient-text">menos de 1 minuto.</span></>} subtitle="7 dias grátis. Sem cartão de crédito." />
-        <div className="mt-10"><TrialForm /></div>
+        <SectionHeader
+          chip="Teste gratuito"
+          title={
+            <>
+              Crie sua conta em <span className="gradient-text">menos de 1 minuto.</span>
+            </>
+          }
+          subtitle="7 dias grátis. Sem cartão de crédito."
+        />
+        <div className="mt-10">
+          <TrialForm />
+        </div>
       </div>
     </section>
   );
@@ -606,19 +893,35 @@ function SectionFinalCTA() {
               Transforme seu WhatsApp em uma central de atendimento inteligente.
             </h2>
             <p className="mt-5 text-primary-foreground/85 max-w-2xl mx-auto text-lg">
-              Experimente gratuitamente e descubra como sua empresa pode responder mais rápido, organizar melhor suas conversas e reduzir a perda de oportunidades.
+              Experimente gratuitamente e descubra como sua empresa pode responder mais rápido,
+              organizar melhor suas conversas e reduzir a perda de oportunidades.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <a href="#teste" className="inline-flex items-center justify-center gap-2 rounded-xl bg-background text-foreground px-6 py-3.5 font-semibold hover:scale-[1.02] transition-transform">
+              <a
+                href="#teste"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-background text-foreground px-6 py-3.5 font-semibold hover:scale-[1.02] transition-transform"
+              >
                 Quero testar grátis <ArrowRight size={16} />
               </a>
-              <a href="https://wa.me/555141061160" target="_blank" rel="noreferrer" className="btn-whatsapp">
+              <a
+                href="https://wa.me/555141061160"
+                target="_blank"
+                rel="noreferrer"
+                className="btn-whatsapp"
+              >
                 <Headphones size={18} /> Falar no WhatsApp
               </a>
             </div>
             <ul className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary-foreground/90">
-              {["Teste gratuito por 7 dias", "Sem cartão de crédito", "Cancelamento simples", "Suporte brasileiro"].map((t) => (
-                <li key={t} className="flex items-center gap-2"><Check size={16} /> {t}</li>
+              {[
+                "Teste gratuito por 7 dias",
+                "Sem cartão de crédito",
+                "Cancelamento simples",
+                "Suporte brasileiro",
+              ].map((t) => (
+                <li key={t} className="flex items-center gap-2">
+                  <Check size={16} /> {t}
+                </li>
               ))}
             </ul>
           </div>

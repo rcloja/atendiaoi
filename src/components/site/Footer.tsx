@@ -10,28 +10,70 @@ export function Footer() {
             <span className="text-lg">AtendenteAi</span>
           </div>
           <p className="mt-4 text-sm text-muted-foreground max-w-md">
-            Plataforma de atendimento para WhatsApp. Centralize conversas, organize
-            seu histórico e responda mais rápido — com equipe humana e tecnologia
-            trabalhando juntas.
+            Plataforma de atendimento para WhatsApp. Centralize conversas, organize seu histórico e
+            responda mais rápido — com equipe humana e tecnologia trabalhando juntas.
           </p>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold text-foreground">Produto</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li><a href="#recursos" className="hover:text-foreground">Recursos</a></li>
-            <li><a href="#planos" className="hover:text-foreground">Planos</a></li>
-            <li><a href="#parceiros" className="hover:text-foreground">Parceiros</a></li>
-            <li><a href="#faq" className="hover:text-foreground">FAQ</a></li>
+            <li>
+              <a href="#recursos" className="hover:text-foreground">
+                Recursos
+              </a>
+            </li>
+            <li>
+              <a href="#planos" className="hover:text-foreground">
+                Planos
+              </a>
+            </li>
+            <li>
+              <a href="#parceiros" className="hover:text-foreground">
+                Parceiros
+              </a>
+            </li>
+            <li>
+              <a href="#faq" className="hover:text-foreground">
+                FAQ
+              </a>
+            </li>
           </ul>
         </div>
 
         <div>
           <h4 className="text-sm font-semibold text-foreground">Contato</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li><a href="https://wa.me/5551996479050" target="_blank" rel="noreferrer" className="hover:text-foreground">WhatsApp (51) 99647-9050</a></li>
-            <li><a href="/documentacao.html" target="_blank" rel="noreferrer" className="hover:text-foreground">Documentação</a></li>
-            <li><a href="https://admin.atendenteai.com.br" target="_blank" rel="noreferrer" className="hover:text-foreground">Login</a></li>
+            <li>
+              <a
+                href="https://wa.me/5551996479050"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-foreground"
+              >
+                WhatsApp (51) 99647-9050
+              </a>
+            </li>
+            <li>
+              <a
+                href="/documentacao.html"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-foreground"
+              >
+                Documentação
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://admin.atendenteai.com.br"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-foreground"
+              >
+                Login
+              </a>
+            </li>
           </ul>
         </div>
       </div>

@@ -107,8 +107,12 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -116,7 +120,13 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-  h1, h2, h3, h4 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
 }
 
 @utility container-page {
@@ -137,10 +147,20 @@
   font-size: 0.95rem;
   background: linear-gradient(180deg, var(--primary), var(--primary-dark));
   color: var(--primary-foreground);
-  box-shadow: 0 6px 20px -6px color-mix(in oklab, var(--primary) 55%, transparent), inset 0 1px 0 rgba(255,255,255,0.15);
-  transition: transform .15s ease, box-shadow .2s ease, filter .2s ease;
-  &:hover { transform: translateY(-1px); filter: brightness(1.05); }
-  &:active { transform: translateY(0); }
+  box-shadow:
+    0 6px 20px -6px color-mix(in oklab, var(--primary) 55%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+  &:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
+  &:active {
+    transform: translateY(0);
+  }
 }
 
 @utility btn-secondary {
@@ -155,8 +175,13 @@
   background: var(--background);
   color: var(--foreground);
   border: 1px solid var(--border);
-  transition: background .2s ease, border-color .2s ease;
-  &:hover { background: var(--surface); border-color: color-mix(in oklab, var(--primary) 30%, var(--border)); }
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+  &:hover {
+    background: var(--surface);
+    border-color: color-mix(in oklab, var(--primary) 30%, var(--border));
+  }
 }
 
 @utility btn-whatsapp {
@@ -167,11 +192,16 @@
   padding: 0.875rem 1.5rem;
   border-radius: 0.75rem;
   font-weight: 600;
-  background: #25D366;
+  background: #25d366;
   color: white;
   box-shadow: 0 6px 18px -6px rgba(37, 211, 102, 0.55);
-  transition: transform .15s ease, filter .2s ease;
-  &:hover { transform: translateY(-1px); filter: brightness(1.05); }
+  transition:
+    transform 0.15s ease,
+    filter 0.2s ease;
+  &:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+  }
 }
 
 @utility card-soft {
@@ -179,7 +209,10 @@
   border: 1px solid var(--border);
   border-radius: 1rem;
   box-shadow: var(--shadow-soft);
-  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
   &:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-elevated);
@@ -214,19 +247,37 @@
 }
 
 @utility bg-grid {
-  background-image:
-    radial-gradient(circle at 1px 1px, color-mix(in oklab, var(--primary) 18%, transparent) 1px, transparent 0);
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    color-mix(in oklab, var(--primary) 18%, transparent) 1px,
+    transparent 0
+  );
   background-size: 28px 28px;
 }
 
 @keyframes float-y {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
-@utility float-anim { animation: float-y 6s ease-in-out infinite; }
+@utility float-anim {
+  animation: float-y 6s ease-in-out infinite;
+}
 
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-@utility fade-up { animation: fade-up .7s ease-out both; }
+@utility fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
