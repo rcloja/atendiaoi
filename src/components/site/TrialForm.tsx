@@ -5,8 +5,8 @@ const ACTION_URL = "https://admin.atendenteai.com.br/cadastroteste.html";
 
 function formatWhatsapp(value: string) {
   const digits = value.replace(/\D/g, "").slice(0, 13);
-  let ddi = digits.slice(0, 2);
-  let ddd = digits.slice(2, 4);
+  const ddi = digits.slice(0, 2);
+  const ddd = digits.slice(2, 4);
   const part1 = digits.slice(4, 9);
   const part2 = digits.slice(9, 13);
 
