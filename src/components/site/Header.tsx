@@ -3,10 +3,10 @@ import { Menu, X } from "lucide-react";
 import logoAsset from "@/assets/atendenteai-logo.png.asset.json";
 
 const NAV = [
-  { label: "Recursos", href: "#recursos" },
-  { label: "Planos", href: "#planos" },
-  { label: "Parceiros", href: "#parceiros" },
-  { label: "Documentação", href: "/documentacao.html", external: true },
+  { label: "Recursos", href: "/#recursos" },
+  { label: "Planos", href: "/#planos" },
+  { label: "Parceiros", href: "/#parceiros" },
+  { label: "Documentação", href: "/documentacao" },
 ];
 
 export function Header() {

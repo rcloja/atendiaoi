@@ -30,7 +30,7 @@ export function Footer() {
           <h4 className="text-sm font-semibold text-foreground">Contato</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li><a href="https://wa.me/5551996479050" target="_blank" rel="noreferrer" className="hover:text-foreground">WhatsApp (51) 99647-9050</a></li>
-            <li><a href="/documentacao.html" target="_blank" rel="noreferrer" className="hover:text-foreground">Documentação</a></li>
+            <li><a href="/documentacao" className="hover:text-foreground">Documentação</a></li>
             <li><a href="https://admin.atendenteai.com.br" target="_blank" rel="noreferrer" className="hover:text-foreground">Login</a></li>
           </ul>
         </div>
